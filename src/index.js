@@ -4,9 +4,15 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+const array = ["Home", "Services", "About", "Contact"]
+const footer = ["Gmail", "Linkedin", "Github"]
+let bodyDescription = "This is my first simple React App project with a few components, sections and styling. Contains just a header, a body and the footer. Links are not active yet."
+
+
+
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <App title="First React App" clave={array} footer={footer} bodyDescr={bodyDescription}/>
   </React.StrictMode>,
   document.getElementById('root')
 );
